@@ -1,0 +1,22 @@
+/* Header
+----------------*/
+
+.header {
+
+  background-color: hsla(350, 74%, 38%, 1);
+
+}
+
+.footer {
+
+  background-color: hsla(350, 74%, 38%, 1);
+
+}
+
+.welcome {
+
+  font-family: 'Kaushan Script', cursive;
+
+  font-size: 88px;
+
+}
