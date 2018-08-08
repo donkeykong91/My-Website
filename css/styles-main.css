@@ -1,15 +1,34 @@
+/* Global
+----------------*/
+
+body {
+
+  background-color: hsl(184.3,5.8%,52.5%);
+
+}
+
+article section h2{
+
+  color: hsl(180, 6%, 10%);
+
+}
+
+/* End Global
+----------------*/
+
+
 /* Header
 ----------------*/
 
 .header {
 
-  background-color: hsla(350, 74%, 38%, 1);
+  background-color: hsla(194, 11%, 23%);
 
 }
 
 .footer {
 
-  background-color: hsla(350, 74%, 38%, 1);
+  background-color: hsla(194, 11%, 23%);
 
 }
 
@@ -19,4 +38,124 @@
 
   font-size: 88px;
 
+  font-weight: 100;
+
+  color: hsl(74, 30%, 89%);
+
+  margin: 0;
+
+  text-align: center;
+
 }
+
+/* Navigation
+----------------*/
+.menu,
+
+.nav {
+
+  display: block;
+
+}
+
+.single-nav ul {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space=between;
+
+}
+
+.single-nav li {
+
+  flex: 1 0 auto;
+
+  text-align: center;
+
+}
+
+.menu ul {
+
+  list-style-type: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  background: hsl(180, 25%, 25%);
+
+}
+
+.menu li a {
+
+  font-family: "Courgette", cursive;
+
+  font-weight: 100;
+
+  font-size: 25px;
+
+  display: block;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+
+  padding: .6em 1em;
+
+}
+
+.menu li a:hover {
+
+  background: hsl(180, 25%, 20%);
+
+}
+
+/* End-Navigation
+--------------------*/
+
+/* End-Header
+-----------------*/
+
+/* About Me
+--------------------*/
+
+.about-me{
+
+  font-family: "Courgette", cursive;
+
+  font-size: 35px;
+
+}
+
+/* End-About Me
+---------------------*/
+
+/* Projects
+-----------------*/
+
+.projects {
+
+    font-family: "Courgette", cursive;
+
+    font-size: 35px;
+
+}
+
+/* End-Projects
+-----------------*/
+
+/* Resumes
+----------------*/
+
+.resume {
+
+    font-family: "Courgette", cursive;
+
+    font-size: 35px;
+
+}
+
+/* End-Resumes
+----------------*/
