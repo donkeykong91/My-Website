@@ -23,16 +23,6 @@ h2 {
 
 }
 
-.site{
-
-  background-color: hsl(184.3,5.8%,52.5%);
-
-  max-width: 50em;
-
-  margin: 0 auto;
-
-}
-
 /* End Global
 ----------------*/
 
@@ -40,31 +30,80 @@ h2 {
 /* Header
 ----------------*/
 
+header h1 {
+
+	font-family: "Courgette", cursive;
+
+	margin: 0;
+
+	font-size: 4em;
+
+	color: hsl(74, 30%, 80%);
+
+	font-weight: 100;
+
+	text-align: center;
+
+	padding-top: .5em;
+
+	padding-bottom: .2em;
+
+}
+
 .header {
 
   background-color: hsl(194, 11%, 23%);
 
 }
 
-.footer {
+.logo-background {
 
-  background-color: hsl(194, 11%, 23%);
+	background-image: url("https://i.imgur.com/JHWJ8F3.png");
+
+	background-repeat: repeat;
+
+	background-blend-mode: lighten;
+}
+
+.background-cornucopia-image {
+
+	background-image: url("https://i.imgur.com/FR8o97q.png");
+
+	background-attachment: fixed;
+
+	background-repeat: no-repeat;
+
+	background-position: center;
+
+	background-size: contain;
+
+	background-color: rgba(238, 238, 238, 0.81) !important;
+
+	background-blend-mode: color;
 
 }
 
-.welcome {
+.background-code {
 
-  font-family: 'Kaushan Script', cursive;
+	background-image: url("https://i.imgur.com/wkc0Pyr.png");
 
-  font-size: 5em;
+	background-blend-mode: lighten;
 
-  font-weight: 100;
+}
 
-  color: hsl(74, 30%, 89%);
+.background-transparent-teal-header {
 
-  margin: 0 0 .5em 0;
+	background-color: hsla(174, 95%, 50%, .2);
 
-  text-align: center;
+	margin: .65em 0.5em;
+
+	padding-bottom: 20em;
+
+	border-radius: 10px;
+
+	border-color: teal;
+
+	border-style: solid;
 
 }
 
@@ -102,9 +141,11 @@ h2 {
 
   padding: 0;
 
-  margin: 0;
+  margin: 0 .25em;
 
-  background: hsl(30, 4%, 25%);
+	margin-bottom: -.25em;
+
+  background: hsla(30, 4%, 25%, .85);
 
 }
 
@@ -114,7 +155,7 @@ h2 {
 
   font-weight: 100;
 
-  font-size: 1.5em;
+  font-size: 1.25em;
 
   display: block;
 
@@ -123,12 +164,6 @@ h2 {
   color: #FFFFFF;
 
   padding: .6em 1em;
-
-}
-
-.menu li a:hover {
-
-  background: hsl(30, 4%, 15%);
 
 }
 
@@ -177,11 +212,47 @@ h2 {
 
 }
 
+.about-me-title {
+
+  font-family: 'Kaushan Script', cursive;
+
+  font-size: 15vw;
+
+  font-weight: 100;
+
+	color: hsl(180, 6%, 10%);
+
+  margin: 0 0 .5em 0;
+
+  text-align: center;
+
+}
+
+.bold {
+
+	font-weight: 600;
+
+}
+
 .my-picture {
 
   max-width: 100%;
 
   height: auto;
+
+}
+
+.background-transparent-light-blue-aboutme {
+
+	background-color: hsla(212, 95%, 50%, 0.2);
+
+	margin: .75em;
+
+	border-radius: 10px;
+
+	border-color: hsl(212, 95%, 50%);
+
+	border-style: solid;
 
 }
 
@@ -197,19 +268,206 @@ h2 {
 
 }
 
- .projects p {
+.projects h2 {
 
-    font-family: 'Lora', serif;
+  margin-top: 0;
 
-    font-size: 1.5em;
-
-    text-align: center;
-
- }
+}
 
  .projects p:last-of-type {
 
     padding-bottom: 1.5em;
+
+ }
+
+ .background-transparent-purple-projects {
+
+	 background-color: hsla(270, 95%, 50%, .2);
+
+	 margin: 0.75em;
+
+	 border-radius: 10px;
+
+	 border-color: hsl(270, 95%, 50%);
+
+	 border-style: solid;
+
+ }
+
+ .background-projects-image {
+
+	 background-image: url("https://i.imgur.com/KsUTLZE.jpg");
+
+	 background-attachment: fixed;
+
+	 background-size: contain;
+
+	 background-color: rgba(238, 238, 238, 0.81) !important;
+
+	 background-blend-mode: color;
+
+ }
+
+ .wrapper {
+
+	 max-width: 100%;
+
+	 height: 30em;
+
+	 margin: auto;
+
+ }
+
+ .project {
+
+	 max-width: 100%;
+
+	 height: auto;
+
+	 display: flex;
+
+	 justify-content: center;
+
+	 align-items: center;
+
+	 box-shadow: 0 0 0 10em inset,
+							 0 0 5px gray;
+
+	 transition: box-shadow 1s;
+
+ }
+
+ .project::after {
+
+	 width: 80%;
+
+	 height: 80%;
+
+	 display: block;
+
+	 white-space: pre;
+
+	 font: 15pt "sigmar one";
+
+	 color: white;
+
+	 border: 2px solid;
+
+	 text-align: center;
+
+	 display: flex;
+
+	 justify-content: center;
+
+	 align-items: center;
+
+	 transition: opacity 1s .5s;
+
+ }
+
+ .project:hover {
+
+	 box-shadow: 0 0 0 5px inset,
+							 0 0 5px gray,
+							 0 0 10px gray inset;
+
+	 transition: box-shadow 1s;
+
+ }
+
+ .project:hover::after {
+
+	 opacity: 0;
+
+	 transition: opacity .5s;
+
+ }
+
+ .chatter {
+
+	 background-image: url("https://i.imgur.com/qqb1HNI.png");
+
+	 background-position: center;
+
+	 background-size: 100%;
+
+	 background-repeat: no-repeat;
+
+	 color: rgba(71, 121, 94, .9);
+
+ }
+
+ .chatter::after {
+
+	 content: "Chatter";
+
+	 font-size: 5.5vw;
+
+ }
+
+ .ski-dictionary {
+
+	background-image: url("https://i.imgur.com/aZ0mgfe.png");
+
+	background-position: center;
+
+	background-size: 100%;
+
+	background-repeat: no-repeat;
+
+	color: rgba(71, 121, 94, .9);
+
+ }
+
+ .ski-dictionary::after {
+
+		content: "Ski-Dictionary";
+
+		font-size: 5.5vw;
+
+ }
+
+ .slackbot {
+
+	background-image: url("https://i.imgur.com/mZ3Nc5T.png");
+
+	background-position: center;
+
+	background-size: 100%;
+
+	background-repeat: no-repeat;
+
+	color: rgba(71, 121, 94, .9);
+
+ }
+
+ .slackbot::after {
+
+	content: "Slackbot";
+
+	font-size: 5.5vw;
+
+ }
+
+ .website {
+
+	background-image: url("https://i.imgur.com/1tscHGb.png");
+
+	background-position: center;
+
+	background-size: 100%;
+
+	background-repeat: no-repeat;
+
+	color: rgba(71, 121, 94, .9);
+
+ }
+
+ .website::after {
+
+	content: "Website";
+
+	font-size: 5.5vw;
 
  }
 
@@ -227,11 +485,15 @@ h2 {
 
 }
 
+.resume h2 {
+
+  margin-top: 0;
+
+}
+
 .resume-body {
 
   padding: 0 1em;
-
-  /* margin-bottom: 1em; */
 
 }
 
@@ -246,6 +508,66 @@ h2 {
   padding-left: 1em;
 
   margin-bottom: 0;
+
+}
+
+.background-transparent-orange-resume {
+
+	background-color: hsla(34, 97%, 77%, .6);
+
+	margin: 0.75em;
+
+	border-color: orange;
+
+	border-style: solid;
+
+	border-radius: 10px;
+
+}
+
+.background-resume-image {
+
+	background-image: url("https://i.imgur.com/DBMwA57.png");
+
+	background-attachment: fixed;
+
+	background-size: contain;
+
+	background-repeat: no-repeat;
+
+  background-color: rgba(238, 238, 238, 0.76) !important;
+
+  background-blend-mode: color;
+
+}
+
+.button {
+
+  text-decoration: none;
+
+  background: #EF233C;
+
+  color: white;
+
+  padding: 10px;
+
+  display: inline-block;
+
+}
+
+.download {
+
+  position: relative;
+
+  bottom: 0;
+
+  right: 0;
+
+}
+
+.top-left-rounded-edge {
+
+	border-top-left-radius: 10px;
 
 }
 
@@ -315,6 +637,12 @@ h2 {
 /* Footer
 ---------------*/
 
+.footer {
+
+  background-color: hsl(194, 11%, 23%);
+
+}
+
 .footer h2 {
 
   margin-top: 0;
@@ -331,13 +659,25 @@ h2 {
 
   display: flex;
 
-  justify-content: center;
+  justify-content: space-evenly;
 
 }
 
-.contact-info a {
+.background-transparent-teal-contact {
 
-  margin: 0 2em;
+	background-color: hsla(174, 95%, 50%, .2);
+
+	margin: 0 0.5em;
+
+	margin-top: 0.65em;
+
+	padding-bottom: 2.5em;
+
+	border-radius: 10px;
+
+	border-color: teal;
+
+	border-style: solid;
 
 }
 
@@ -350,6 +690,10 @@ h2 {
   padding-top: 2em;
 
   padding-bottom: .5em;
+
+	color: white;
+
+	font-weight: 800;
 }
 
 .fa-at {
@@ -391,114 +735,16 @@ h2 {
 /* Footer-End
 ---------------*/
 
-/* Grid
------------*/
-
-/*Resume-Grid
-----------*/
-
-.inner-body-university p:first-child {
-
-  display: grid;
-
-}
-
-.inner-body-college p:first-child {
-
-  display: grid;
-
-}
-
-.inner-heading-utelogy h4 {
-
-  display: grid;
-
-}
-
-.inner-heading-swch h4 {
-
-  display: grid;
-
-  padding-top: 1em;
-
-}
-
-.inner-body-swch {
-
-  display: grid;
-
-  grid-template-columns: 80%;
-
-}
-
-.inner-body-proficiencies {
-
-  display: grid;
-
-  grid-template-columns: 75%;
-
-}
-
-.university {
-
-  grid-row: 2/3;
-
-}
-
-.college {
-
-  grid-row: 2/3;
-
-}
-
-.utelogy {
-
-  grid-row: 2/3;
-
-}
-
-.swch {
-
-  grid-row: 2/3;
-
-}
-
-.date-university {
-
-  grid-row: 1/2;
-
-}
-
-.date-college {
-
-  grid-row: 1/2;
-
-}
-
-.date-utelogy {
-
-  grid-row: 1/2;
-
-}
-
-.date-swch {
-
-  grid-row: 1/2;
-
-}
-
-
-/*End-Resume-Grid
-------------*/
-
-/* Media Query
+/* Media Query Wide
 ---------------*/
 
 @supports (grid-area: auto) {
 
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: 75em) {
 
     .site {
+
+			background-color: hsl(184.3,5.8%,52.5%);
 
       max-width: none;
 
@@ -516,7 +762,35 @@ h2 {
 
       grid-row-gap: 1.25em;
 
+      margin: 0;
+
     }
+
+    .sticky {
+
+      position: sticky;
+
+      top: 1em;
+
+    }
+
+    .box-shadow {
+
+      box-shadow: 10px 10px 10px hsl(210, 7%, 33%);
+
+    }
+
+		.box-shadow-2 {
+
+			box-shadow: 5px 5px 5px hsl(210, 7%, 33%);
+
+		}
+
+		.rounded-edges {
+
+			border-radius: 10px;
+
+		}
 
 /* Header
 -------------*/
@@ -525,11 +799,7 @@ h2 {
 
       grid-column: 1/2;
 
-      margin-left: .75em;
-
-      margin-top: .75em;
-
-      margin-bottom: .75em;
+      margin: .75em 0 .75em .75em;
 
     }
 
@@ -542,6 +812,30 @@ h2 {
 /* Navigation
 --------------*/
 
+    nav a {
+
+      transition: all 0.5s ease;
+
+      padding: .4em 0;
+
+    }
+
+    .menu li a {
+
+      padding: .6em 3em;
+
+    }
+
+    .menu li a:hover {
+
+      padding: .6em 4.25em;
+
+      background: hsl(30, 4%, 15%);
+
+      color: white;
+
+    }
+
     .single-nav ul {
 
       display: inherit;
@@ -553,6 +847,28 @@ h2 {
       display: none;
 
     }
+
+    .single-nav li {
+
+      text-align: left;
+
+    }
+
+		.rounded-edges-top {
+
+			border-top-left-radius: 10px;
+
+			border-top-right-radius: 10px;
+
+		}
+
+		.rounded-edges-bottom-wide {
+
+			border-bottom-left-radius: 10px;
+
+			border-bottom-right-radius: 10px;
+
+		}
 
 /* End-Navigation
 ---------------*/
@@ -571,6 +887,12 @@ h2 {
 
     }
 
+		img {
+
+			border-radius: 10px;
+
+		}
+
 /* End-About Me
 ---------------*/
 
@@ -587,6 +909,55 @@ h2 {
       margin-top: 0;
 
     }
+
+		.project {
+
+	 	 	box-shadow: 0 0 0 10em inset,
+	 							 0 0 5px gray;
+
+	  }
+
+		.center {
+
+			display: grid;
+
+			/* grid-template-columns: 1fr 1fr; */
+
+			grid-template-rows: 1fr 1fr;
+
+			/* justify-items: stretch; */
+
+			grid-gap: 1em 1em;
+
+			padding: 0 1em;
+
+		}
+
+		.chatter::after {
+
+			font-size: 2.5vw;
+
+		}
+
+		.ski-dictionary::after {
+
+		 font-size: 2.5vw;
+
+		}
+
+		.slackbot::after {
+
+		 font-size: 2.5vw;
+
+		}
+
+		.website::after {
+
+		 font-size: 2.5vw;
+
+		}
+
+
 /* End-Projects
 --------------*/
 
@@ -609,7 +980,7 @@ h2 {
 
     .resume-body {
 
-      padding: 3em;
+      padding: 0 3em 3em;
 
     }
 
@@ -700,6 +1071,12 @@ h2 {
 
     }
 
+		.about-me-title {
+
+			font-size: 8vw;
+
+		}
+
     .contact-info {
 
       display: grid;
@@ -712,6 +1089,19 @@ h2 {
 
     }
 
+    .grow a {
+
+      transition: all .2s ease-in-out;
+
+    }
+
+    .grow a:hover {
+
+      transform: scale(1.3);
+
+    }
+
+
 /* End-footer
 -------------*/
 
@@ -720,9 +1110,635 @@ h2 {
 }
 
 
-/* End-Media Query
+/* End-Media Query Wide
 -------------------*/
 
 
-/* End-Grid
-------------*/
+/* Media Query Middle
+--------------------*/
+
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 50em) and (max-width: 75em) {
+
+    .site {
+
+			background-color: hsl(184.3,5.8%,52.5%);
+
+      max-width: none;
+
+      display: grid;
+
+      grid-template-columns: 20em auto;
+
+    }
+
+    .sticky {
+
+      position: sticky;
+
+      top: 1em;
+
+    }
+
+    .box-shadow {
+
+      box-shadow: 10px 10px 10px hsl(210, 7%, 33%);
+
+    }
+
+		.box-shadow-2 {
+
+			box-shadow: 5px 5px 5px hsl(210, 7%, 33%);
+
+		}
+
+		.rounded-edges {
+
+			border-radius: 10px;
+
+		}
+
+    /* Header
+    -----------*/
+
+		header h1 {
+
+			font-size: 3.8em;
+
+		}
+
+    .header {
+
+      grid-row: 1/2;
+
+      margin: 1em 1em 0 1em;
+
+    }
+
+    .welcome {
+
+      padding-top: .5em;
+
+    }
+
+		.background-cornucopia-image {
+
+			background-image: url("https://i.imgur.com/FR8o97q.png");
+
+			background-attachment: fixed;
+
+			background-repeat: no-repeat;
+
+			background-position: center;
+
+			background-size: 100% 100%;
+
+			background-color: rgba(238, 238, 238, 0.81) !important;
+
+			background-blend-mode: color;
+
+		}
+
+    /* Navigation
+    --------------*/
+
+    nav a {
+
+      transition: all 0.25s ease;
+
+    }
+
+    .menu li a {
+
+      font-size: 1.7em;
+
+    }
+
+    .menu li a:hover {
+
+      background: hsl(30, 4%, 15%);
+
+      font-size: 1.95em;
+
+    }
+
+		.grow a {
+
+			transition: all .2s ease-in-out;
+
+		}
+
+		.grow a:hover {
+
+			transform: scale(1.3);
+
+		}
+
+
+	 .rounded-edges-top {
+
+			border-top-left-radius: 10px;
+
+			border-top-right-radius: 10px;
+
+		}
+
+		.rounded-edges-bottom {
+
+			border-bottom-left-radius: 10px;
+
+			border-bottom-right-radius: 10px;
+
+		}
+
+
+    /* End-Navigation
+    ---------------*/
+
+    /* End-Header
+    ------------*/
+
+    /* Article
+    -----------*/
+
+    .article {
+
+      display: grid;
+
+      grid-row-gap: 1.25em;
+
+      margin-top: 1em;
+
+      margin-right: 1em;
+
+    }
+
+    /* End-Article
+    -------------*/
+
+		/* About Me
+		------------*/
+
+		img {
+
+			border-radius: 10px;
+
+		}
+
+		/* End-About Me
+		--------------*/
+
+		/* Projects
+		-----------*/
+
+		.wrapper {
+
+			max-width: 100%;
+
+			height: 25em;
+
+			margin: auto;
+
+		}
+
+		.center {
+
+			display: grid;
+
+			grid-template-columns: 1fr 1fr;
+
+			grid-template-rows: 1fr 1fr;
+
+			justify-items: stretch;
+
+			grid-gap: 1em 1em;
+
+			padding: 0 1em;
+
+		}
+
+	 .chatter::after {
+
+		 font-size: 3.5vw;
+
+	 }
+
+	 .ski-dictionary::after {
+
+		font-size: 3.5vw;
+
+	 }
+
+	 .slackbot::after {
+
+		font-size: 3.5vw;
+
+	 }
+
+	 .website::after {
+
+		font-size: 3.5vw;
+
+	 }
+
+
+		/* End-Projects
+		-------------*/
+
+    /* Resume
+    -----------*/
+
+    .university {
+
+      display: grid;
+
+      grid-template-columns: 75% 25%;
+
+    }
+
+    .college {
+
+      display: grid;
+
+      grid-template-columns: 75% 25%;
+
+    }
+
+    .utelogy {
+
+      display: grid;
+
+      grid-template-columns: 75% 25%;
+
+    }
+
+    .swch {
+
+      display: grid;
+
+      grid-template-columns: 75% 25%;
+
+    }
+
+    .date-university {
+
+      grid-column: 2/3;
+
+    }
+
+    .date-college {
+
+      grid-column: 2/3;
+
+    }
+
+    .date-utelogy {
+
+      grid-column: 2/3;
+
+    }
+
+    .date-swch {
+
+      grid-column: 2/3;
+
+    }
+
+    /* End-Resume
+    -------------*/
+
+    /* Footer
+    -----------*/
+
+    .footer {
+
+      grid-column: 1/3;
+
+			display: grid;
+
+      margin: 1em;
+
+    }
+
+		.background-transparent-teal-contact {
+
+			margin: .5em;
+
+			padding-bottom: 0;
+
+		}
+
+    /* End-Footer
+    ------------*/
+
+  }
+
+}
+/* End-Media Query Middle
+--------------------*/
+
+/* Media Query Small
+-----------*/
+
+@supports (grid-area: auto) {
+
+  @media screen and (max-width: 50em) {
+
+    .site {
+
+			background-color: hsl(184.3,5.8%,52.5%);
+
+    }
+
+    .box-shadow {
+
+      box-shadow: 10px 10px 10px hsl(210, 7%, 33%);
+
+    }
+
+		.box-shadow-2 {
+
+			box-shadow: 10px 10px 10px hsl(210, 7%, 33%);
+
+		}
+
+		.rounded-edges {
+
+			border-radius: 10px;
+
+		}
+
+    /* Header
+    ----------*/
+
+		header h1 {
+
+			font-size: 15vw;
+
+		}
+
+		h2 {
+
+		  font-size: 15vw;
+
+		}
+
+    .header {
+
+      margin: 1em 1em 1em 1em;
+
+			display: grid;
+
+    }
+
+		.background-code-header {
+
+			background-image: url("https://i.imgur.com/wkc0Pyr.png");
+
+			background-blend-mode: lighten;
+
+		}
+
+		.background-transparent-teal-header {
+
+			background-color: hsla(174, 95%, 50%, .2);
+
+			margin: .65em;
+
+			padding-bottom: 1em;
+
+			border-radius: 10px;
+
+			border-color: teal;
+
+			border-style: solid;
+
+		}
+
+    /* Navigation
+    ---------------*/
+
+    nav a {
+
+      transition: all 0.5s ease;
+
+    }
+
+		.menu li a {
+
+		  font-size: 3vw;
+
+		}
+
+    .menu li a:hover {
+
+      background: hsl(30, 4%, 15%);
+
+    }
+
+		.grow a {
+
+			transition: all .2s ease-in-out;
+
+		}
+
+		.grow a:hover {
+
+			transform: scale(1.3);
+
+		}
+
+		.rounded-edges-left-small {
+
+			border-top-left-radius: 10px;
+
+			border-bottom-left-radius: 10px;
+
+		}
+
+		.rounded-edges-right-small {
+
+			border-top-right-radius: 10px;
+
+			border-bottom-right-radius: 10px;
+
+		}
+
+    /* End-Navigation
+    ----------------*/
+
+    /* Article
+    ----------------*/
+
+    .article {
+
+      display: grid;
+
+      grid-row-gap: 1em;
+
+      margin: 0 1em;
+
+    }
+
+    /* End-Article
+    ----------------*/
+
+		/* About Me
+		------------*/
+
+		img {
+
+			border-radius: 10px;
+
+		}
+
+		/* End-About Me
+		--------------*/
+
+		/* Projects
+		-------------*/
+
+
+		.center {
+
+			display: grid;
+
+			grid-template-columns: 1fr 1fr;
+
+			grid-template-rows: 1fr 1fr;
+
+			justify-items: stretch;
+
+			grid-gap: 1em 1em;
+
+			padding: 0 1em;
+
+		}
+
+		/* End-Projects
+		-------------*/
+
+    /* Resume
+    ----------*/
+
+    .inner-body-university p:first-child {
+
+      display: grid;
+
+    }
+
+    .inner-body-college p:first-child {
+
+      display: grid;
+
+    }
+
+    .inner-heading-utelogy h4 {
+
+      display: grid;
+
+    }
+
+    .inner-heading-swch h4 {
+
+      display: grid;
+
+      padding-top: 1em;
+
+    }
+
+    .inner-body-swch {
+
+      display: grid;
+
+      grid-template-columns: 80%;
+
+    }
+
+    .inner-body-proficiencies {
+
+      display: grid;
+
+      grid-template-columns: 75%;
+
+    }
+
+    .university {
+
+      grid-row: 2/3;
+
+    }
+
+    .college {
+
+      grid-row: 2/3;
+
+    }
+
+    .utelogy {
+
+      grid-row: 2/3;
+
+    }
+
+    .swch {
+
+      grid-row: 2/3;
+
+    }
+
+    .date-university {
+
+      grid-row: 1/2;
+
+    }
+
+    .date-college {
+
+      grid-row: 1/2;
+
+    }
+
+    .date-utelogy {
+
+      grid-row: 1/2;
+
+    }
+
+    .date-swch {
+
+      grid-row: 1/2;
+
+    }
+
+
+    /*End-Resume
+    ------------*/
+
+    /* Footer
+    ---------------*/
+
+    .footer {
+
+      margin: 1em;
+
+			display: grid;
+
+    }
+
+		.background-transparent-teal-contact {
+
+			padding-bottom: 0;
+
+			margin: .5em;
+
+		}
+
+/* End-Footer
+----------------*/
+  }
+
+}
+/* End-Media Query Small
+--------------------------*/
